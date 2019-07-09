@@ -18,7 +18,7 @@ import com.eksad.latihanrest.dao.BrandDao;
 import com.eksad.latihanrest.model.Brand;
 
 @RestController
-@RequestMapping("/brand")
+@RequestMapping("brand")
 public class BrandController {
 	
 	@Autowired
@@ -70,7 +70,7 @@ public class BrandController {
 	}
 	}
 
-	@RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
+	@RequestMapping(value = "delete/{id}", method = RequestMethod.GET)
 	public HashMap<String, Object> delete (@PathVariable Long id){
 		
 		HashMap<String, Object> result = new HashMap<String, Object>();

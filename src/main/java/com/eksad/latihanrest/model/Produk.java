@@ -34,7 +34,7 @@ public class Produk {
 //	@SequenceGenerator(name = "product_id", 
 //		sequenceName = "product_id_seq",
 //		allocationSize = 1)
-	@GeneratedValue(strategy = GenerationType.AUTO) 
+	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private long id;
 	
 	@Column(nullable = false)
